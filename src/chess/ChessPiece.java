@@ -12,7 +12,11 @@ public class ChessPiece extends Piece {
         this.color = color;
         this.moveCount = moveCount;
     }
-
+    public ChessPiece(Board board, Color color) {
+        super(board);
+        this.color = color;
+       
+    }
     public Color getColor() {
         return color;
     }
