@@ -18,6 +18,13 @@ public class ChessPosition {
     public int getRow() {
         return row;
     }
+    
+    public void setCollumn(char collumn) {
+        this.collumn = collumn;
+    }
+    public void setRow(int row) {
+        this.row = row;
+    }
     protected Position toPosition(){
         int math_row = 8 - this.row;
         int math_collumn = this.collumn - 'a';
