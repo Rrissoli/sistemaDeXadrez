@@ -31,9 +31,7 @@ public class ChessPosition {
         return new Position(math_row,math_collumn);
     } 
     protected static ChessPosition fromPosition(Position position){
-        int math_row = position.getRow() + 8;
-        char math_collumn = ((char)(position.getCollumn() - 'a'));
-        return new ChessPosition(math_collumn, math_row);
+        return new ChessPosition((char)('a' + position.getCollumn()), 8 - position.getRow());
     }
     @Override
     public String toString(){
